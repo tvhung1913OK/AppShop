@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="3dp" /> <!-- Điều chỉnh giá trị "20dp" để thay đổi độ cong của góc -->
+    <stroke
+        android:width="2dp"
+        android:color="#000000" />
+    <solid android:color="#FAAE3E" /> <!-- Màu nền của LinearLayout -->
+</shape>

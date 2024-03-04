@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddLocationActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/lnl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+        <ImageButton
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/angle_left"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thêm địa chỉ"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Liên hệ"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/ed_name"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_input_signup"
+        android:padding="20dp"
+        android:hint="Họ và tên người nhận"
+        android:textColorHint="#BBAFAF"/>
+    <EditText
+        android:inputType="number"
+        android:id="@+id/ed_phone"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_input_signup"
+        android:padding="20dp"
+        android:hint="Số điện thoại"
+        android:textColorHint="#BBAFAF"/>
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Địa chỉ"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/ed_location"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_input_signup"
+        android:padding="20dp"
+        android:hint="Địa chỉ"
+        android:textColorHint="#BBAFAF"/>
+
+    <Button
+        android:id="@+id/btn_addLocation"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="60dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="120dp"
+        android:paddingEnd="120dp"
+        android:backgroundTint="#000000"
+        android:text="Save"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+</LinearLayout>

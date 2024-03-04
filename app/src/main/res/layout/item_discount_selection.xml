@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="5dp"
+    android:id="@+id/cv_itemLocation">
+    <!-- res/layout/item_discount_selection.xml -->
+    <CheckBox
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/checkboxDiscount"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
+        <TextView
+            android:id="@+id/tv_name_discount_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discount"
+            android:textSize="23sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_value_discount_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30000"
+            android:textSize="17sp"
+            android:layout_marginTop="7dp"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

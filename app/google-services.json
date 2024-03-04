@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "822551687587",
+    "project_id": "duantotnghiep-6a533",
+    "storage_bucket": "duantotnghiep-6a533.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:822551687587:android:63902ddfaeca2adbed6a16",
+        "android_client_info": {
+          "package_name": "com.example.duantotnghiep"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCl58DgoGKYrO_V9mZPOTpSjkt21bdZi8w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

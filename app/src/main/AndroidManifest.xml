@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_icon_app"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_icon_app_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DuAnTotNghiep"
+        tools:targetApi="31">
+        <activity
+            android:name=".activity.AccountLockedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatBox.Chat.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatBox.ListChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ForgetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ReviewsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.XacNhanCardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DiscountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.StatisticalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.InforOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ShowListLocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AddLocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TopUpCardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.OrderOfShopActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.OrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ListUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ChangePassword_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ManHinhChoActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ManagerProductActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.TrackOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DetailProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.orderDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="340dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#D97E14"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/tlt"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="4dp"
+            android:text="Chi tiết đơn hàng: "
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/idOrder"
+            android:layout_marginTop="7dp"
+            android:text="Mã"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tlt"
+            android:layout_margin="7dp"
+            android:background="#DDA95B"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="15dp">
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recyclerViewHL"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

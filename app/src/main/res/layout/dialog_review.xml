@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".activity.ReviewsActivity">
+    <LinearLayout
+        android:id="@+id/lnl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+        <TextView
+            android:layout_marginLeft="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Viết đánh giá"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/pant"
+            android:id="@+id/imgPr"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/namePr"
+                android:text="ten sp"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Màu "/>
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="#ff00"
+                    android:id="@+id/colorPr"
+                    android:layout_marginLeft="20dp"/>
+            </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Số lượng :"
+                  />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="2"
+                   android:id="@+id/quantityPr"/>
+               <TextView
+                   android:layout_marginLeft="40dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Size :"
+                   />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text=" 39"
+                   android:id="@+id/sizePr"/>
+           </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RatingBar
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:progressBackgroundTint="@color/gray"
+        android:progressTint="@color/yellow"
+        android:stepSize="1" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đánh giá sản phẩm"
+        android:gravity="center"
+        android:textSize="20dp"/>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/com_google_android_material_textfield_TextInputLayoutUN"
+        android:layout_marginTop="15dp"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:hint="Vui lòng nhập đánh giá"
+        app:counterMaxLength="200">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tvReviews"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:inputType="text|textMultiLine"
+            android:gravity="top|start"
+            android:paddingBottom="10dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Gửi đánh giá"
+        android:id="@+id/btnsendreviews"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

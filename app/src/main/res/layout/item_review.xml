@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog"
+    android:layout_marginBottom="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp">
+        <ImageView
+            android:layout_width="45dp"
+            android:src="@drawable/baseline_person_24"
+            android:layout_height="45dp"
+            android:id="@+id/imgUser"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:textStyle="bold"
+            android:text="ten nguoi mua"
+            android:layout_marginLeft="15dp"
+            android:textSize="20dp"
+            android:id="@+id/nameBuyer"/>
+        </LinearLayout>
+
+        <RatingBar
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:progressBackgroundTint="@color/gray"
+            android:progressTint="@color/yellow"
+            android:rating="0"
+            android:scaleX="0.4"
+            android:scaleY="0.4"
+            android:stepSize="1"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvreviews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="day la danh gia"/>
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="10dp"
+        android:layout_gravity="end"
+        android:text="time"/>
+</LinearLayout>

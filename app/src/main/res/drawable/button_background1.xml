@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#2ecc71" /> <!-- Màu nền khi button được nhấn -->
+            <corners android:radius="8dp" /> <!-- Độ cong của góc -->
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#27ae60" /> <!-- Màu nền mặc định của button -->
+            <corners android:radius="8dp" /> <!-- Độ cong của góc -->
+        </shape>
+    </item>
+</selector>

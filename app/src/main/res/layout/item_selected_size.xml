@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="50dp"
+        android:id="@+id/sizeTextView"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_shop"
+        android:text="Size"
+        android:textColor="#E91E63" />
+
+
+</LinearLayout>

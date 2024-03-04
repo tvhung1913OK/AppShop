@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textCardSerial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mã thẻ: " />
+
+    <TextView
+        android:id="@+id/textCardPin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mã PIN: " />
+
+    <TextView
+        android:id="@+id/textCardProvider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhà cung cấp: " />
+
+    <TextView
+        android:id="@+id/textCardValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giá trị thẻ: " />
+
+    <TextView
+        android:id="@+id/textTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thời gian: " />
+
+    <TextView
+        android:id="@+id/textUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Người dùng: " />
+
+    <TextView
+        android:id="@+id/textStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trạng thái: " />
+
+  <LinearLayout
+      android:id="@+id/learNapthe"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:orientation="horizontal">
+      <Button
+          android:layout_weight="1"
+          android:id="@+id/btnToggleStatus"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Xác nhận thẻ" />
+      <Button
+          android:layout_weight="1"
+          android:id="@+id/btnToggleFailedStatus"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Từ chối thẻ" />
+  </LinearLayout>
+
+
+</LinearLayout>

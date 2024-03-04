@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="340dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#D97E14"
+        android:gravity="center"
+        android:id="@+id/tlt"
+        android:text="Voucher"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tlt"
+            android:layout_margin="7dp"
+            android:background="#DDA95B"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="15dp">
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rcvVoucher"/>
+            <TextView
+                android:id="@+id/noResultsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Bạn chưa có voucher nào!!!"
+                android:textSize="25dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

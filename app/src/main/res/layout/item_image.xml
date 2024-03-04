@@ -1,0 +1,21 @@
+<!-- item_image.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+
+    android:orientation="vertical">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageMutil"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="8dp"
+        android:adjustViewBounds="true"
+        android:outlineAmbientShadowColor="@color/black"
+        android:scaleType="center"
+        app:shapeAppearance="@style/roundImg"
+        app:strokeColor="@color/black" />
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="black">#FF000000</color>-->
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#C2BFBF</color>
+    <color name="placeorder">#E91E63</color>
+    <color name="processed">#383C51</color>
+    <color name="backgroud">#EFEFEF</color>
+    <color name="status_bar_color">#D97E14</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="black">#000000</color>
+    <color name="theme_color_80">#CC2176FF</color>
+    <color name="theme_color_8">#142176FF</color>
+    <color name="light_8">#14000000</color>
+    <color name="theme_color">#1B87DD</color>
+</resources>

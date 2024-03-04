@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/backImg"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/round_back_light"
+            android:paddingStart="12dp"
+            android:paddingEnd="2dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_user"
+            android:layout_toEndOf="@+id/backImg"
+            android:id="@+id/profilePic"/>
+        <LinearLayout
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/profilePic">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Name"
+                android:maxLines="1"
+                android:textColor="#424242"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Online"
+                android:textColor="#00C853"
+                android:layout_marginTop="2dp"
+                android:textSize="13sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/chattingRcv"
+        android:layout_above="@+id/bottomBar" />
+
+    <RelativeLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/theme_color_8"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <EditText
+            android:id="@+id/ed_messages"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:textSize="14dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="20dp"
+            android:hint="Nhập tin nhắn ..."/>
+        <ImageView
+            android:layout_marginTop="15dp"
+            android:id="@+id/sendImg"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_send"
+            android:layout_marginEnd="10dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>
